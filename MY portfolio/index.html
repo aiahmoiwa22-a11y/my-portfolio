@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Donald Tech — Software Engineer, Web Developer, Video Editor, Photographer & Model. Premium personal portfolio.">
+  <meta name="theme-color" content="#0a0a1a">
+  <title>Donald Tech | Software Engineer &amp; Creative Visual Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+
+  <!-- PRELOADER -->
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__logo">
+      <span class="preloader__mark">DT</span>
+      <span class="preloader__ring"></span>
+    </div>
+  </div>
+
+  <!-- ANIMATED BACKGROUND -->
+  
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-fx__grid"></div>
+    <div class="bg-fx__glow bg-fx__glow--1"></div>
+    <div class="bg-fx__glow bg-fx__glow--2"></div>
+    <div class="bg-fx__glow bg-fx__glow--3"></div>
+    <span class="floating-shape floating-shape--1"></span>
+    <span class="floating-shape floating-shape--2"></span>
+    <span class="floating-shape floating-shape--3"></span>
+    <span class="floating-shape floating-shape--4"></span>
+    <span class="floating-shape floating-shape--5"></span>
+  </div>
+
+
+  <!-- HEADER / NAVIGATION -->
+  
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a href="#home" class="brand" aria-label="Donald Tech home">
+        <span class="brand__mark">DT</span>
+        <span class="brand__text">DONALD <strong>TECH</strong></span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active" data-nav>Home</a></li>
+          <li><a href="#about" class="nav__link" data-nav>About</a></li>
+          <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+          <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+          <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="#contact" class="btn btn--gradient btn--sm">
+          <span>Let's Connect</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- MOBILE MENU -->
+  
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul class="mobile-menu__list">
+      <li><a href="#home" data-nav-mobile>Home</a></li>
+      <li><a href="#about" data-nav-mobile>About</a></li>
+      <li><a href="#skills" data-nav-mobile>Skills</a></li>
+      <li><a href="#projects" data-nav-mobile>Projects</a></li> 
+      <li><a href="#contact" data-nav-mobile>Contact</a></li>
+    </ul>
+    <div class="mobile-menu__social">
+      <a href="https://www.instagram.com/moiwa22?igsh=MWMwOXM4Z3cza2tx&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href=" http://www.linkedin.com/in/aiah-moiwa-3b7937400 " aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href=" https://www.tiktok.com/@yannahs.tv?_r=" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HOME SECTION -->
+
+    <section id="home" class="section hero">
+      <div class="container hero__grid">
+
+        <div class="hero__content" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Hi, I'm Aiah Donald Moiwa <span class="wave">👋</span></span>
+
+          <h1 class="hero__title">
+            SOFTWARE ENGINEER<br>
+            BUILDING <span class="text-gradient" id="typedTarget"></span><span class="typed-cursor" aria-hidden="true">|</span>
+          </h1>
+
+          <p class="hero__desc">
+            I design and develop scalable, efficient and user-friendly software applications and websites
+            then bring the story to life through cinematic video, photography and modeling.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--gradient">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+            <a href="assets/donald-tech-resume.pdf" class="btn btn--outline" download>
+              <span>Download Resume</span>
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+            </a>
+          </div>
+
+          <div class="hero__stack">
+            <span class="hero__stack-icon" title="React"><i class="fa-brands fa-react"></i></span>
+            <span class="hero__stack-icon" title="JavaScript"><i class="fa-brands fa-square-js"></i></span>
+            <span class="hero__stack-icon" title="Node.js"><i class="fa-brands fa-node-js"></i></span>
+            <span class="hero__stack-icon" title="python"><i class="fa-brands fa-python"></i></span>
+            <span class="hero__stack-icon" title="c++"><i class="fa-solid fa-wind"></i></span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal data-reveal-delay="150">
+          <div class="hero__orb" aria-hidden="true"></div>
+          <div class="glass-card hero__device">
+            <div class="device__bar">
+              <span></span><span></span><span></span>
+            </div class = "device__image">
+              <img src="images/Background_photo.jpg" alt="" class="device__image">
+          </div>
+
+          <div class="glass-card floating-stat floating-stat--top" data-counter-card>
+            <span class="floating-stat__num" data-counter data-target="5">0</span><span>+</span>
+            <span class="floating-stat__label">Projects Completed</span>
+          </div>
+          <div class="glass-card floating-stat floating-stat--bottom" data-counter-card>
+            <span class="floating-stat__num" data-counter data-target="2">0</span><span>+</span>
+            <span class="floating-stat__label">Years Experience</span>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="scroll-cue__mouse"><span class="scroll-cue__dot"></span></span>
+        <span class="scroll-cue__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section about">
+      <div class="container about__grid">
+
+        <div class="about__visual" data-reveal>
+          <div class="about__photo-frame">
+            <img src="images/Donald.jpg" alt="Portrait of Donald Tech" class="about__photo" loading="lazy">
+          </div>
+          <div class="glass-card about__badge">
+            <span class="about__badge-num">2+</span>
+            <span class="about__badge-label">Years<br>Experience</span>
+          </div>
+        </div>
+
+        <div class="about__content" data-reveal data-reveal-delay="150">
+          <span class="eyebrow eyebrow--pill">Get to know me</span>
+          <h2 class="section-title">About <span class="text-gradient">Me.</span></h2>
+          <p class="section-desc">
+            
+            My name is Aiah Donald Moiwa, a passionate Software Engineering student, AI filmmaker, and 
+            digital creator
+            with a strong interest in using technology to solve real-world problems and tell meaningful stories.
+
+            I enjoy building software, designing user-friendly applications, and exploring emerging technologies
+            such as artificial intelligence. My experience includes developing software projects, creating database systems,
+            designing user interfaces, and working with programming languages and development tools to bring ideas to life.
+
+            Beyond software development, I am the founder of YANNAH’S STUDIOS, where I create AI-powered films
+            that showcase powerful African stories. Through storytelling, I aim to entertain, inspire, and preserve 
+            culture while demonstrating the creative possibilities of AI.
+
+            I am also passionate about entrepreneurship and innovation, with interests in financial technology,
+            digital products, and solutions that can improve communities across Africa. I believe technology should
+            not only solve problems but also create opportunities and empower people.
+
+            As a lifelong learner, I continuously improve my skills in software engineering, artificial intelligence,
+            and digital media. My goal is to build impactful technology, create inspiring content, and contribute
+            to projects that make a lasting difference.
+
+          </p>
+          <div class="about__botton" data-reveal data-reveal-delay="200">
+            <div class="stat-grid">
+              <div class="glass-card stat-card">
+                <span class="stat-card__num" data-counter data-target="2">0</span><span class="stat-card__plus">+</span>
+                <span class="stat-card__label">Years Experience</span>
+              </div>
+              <div class="glass-card stat-card">
+                <span class="stat-card__num" data-counter data-target="20">0</span><span class="stat-card__plus">+</span>
+                <span class="stat-card__label">Projects Completed</span>
+              </div>
+              <div class="glass-card stat-card">
+                <span class="stat-card__num" data-counter data-target="100">0</span><span class="stat-card__plus">%</span>
+                <span class="stat-card__label">Client Satisfaction</span>
+              </div>
+              <div class="glass-card stat-card">
+                <span class="stat-card__num" data-counter data-target="3">0</span><span class="stat-card__plus">+</span>
+                <span class="stat-card__label">Skills Mastered</span>
+              </div>
+            </div>
+         </div>
+
+          <div class="about__cta">
+            <a href="assets/donald-tech-resume.pdf" class="btn btn--gradient" download>
+              <span>Download Resume</span>
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <span>Let's Connect</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <ul class="about__more">
+            <li><i class="fa-solid fa-code"></i><span>Coding</span></li>
+            <li><i class="fa-solid fa-film"></i><span>Video Editing</span></li>
+            <li><i class="fa-solid fa-camera"></i><span>Photography</span></li>
+            <li><i class="fa-solid fa-person-walking"></i><span>Modeling</span></li>
+            <li><i class="fa-solid fa-plane"></i><span>Travel</span></li>
+            <li><i class="fa-solid fa-music"></i><span>Music</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  
+    <!-- SKILLS SECTION -->
+  
+    <section id="skills" class="section skills">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--pill">What I Do</span>
+          <h2 class="section-title">My Skills &amp; <span class="text-gradient">Expertise</span></h2>
+          <p class="section-desc">I combine creativity and technology to deliver solutions that are not only functional but also visually stunning.</p>
+        </div>
+
+        <div class="skills__layout">
+
+          <div class="skills__group" data-reveal>
+            <h3 class="skills__group-title"><i class="fa-solid fa-code"></i> Programming Skills</h3>
+            <div class="skill-bars">
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--js"><i class="fa-brands fa-js"></i></span>
+                  <span class="skill-bar__name">JavaScript</span>
+                  <span class="skill-bar__pct">90%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="90" style="--w:90%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--ts">TS</span>
+                  <span class="skill-bar__name">C++</span>
+                  <span class="skill-bar__pct">85%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="85" style="--w:85%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--react"><i class="fa-brands fa-react"></i></span>
+                  <span class="skill-bar__name">React</span>
+                  <span class="skill-bar__pct">90%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="90" style="--w:90%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--node"><i class="fa-brands fa-node-js"></i></span>
+                  <span class="skill-bar__name">Node.js</span>
+                  <span class="skill-bar__pct">85%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="85" style="--w:85%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--python"><i class="fa-brands fa-python"></i></span>
+                  <span class="skill-bar__name">Python</span>
+                  <span class="skill-bar__pct">80%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="80" style="--w:80%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--html"><i class="fa-brands fa-html5"></i></span>
+                  <span class="skill-bar__name">HTML5</span>
+                  <span class="skill-bar__pct">95%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="95" style="--w:95%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--css"><i class="fa-brands fa-css3-alt"></i></span>
+                  <span class="skill-bar__name">CSS3</span>
+                  <span class="skill-bar__pct">90%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="90" style="--w:90%"></div></div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--tw"><i class="fa-solid fa-wind"></i></span>
+                  <span class="skill-bar__name">C#</span>
+                  <span class="skill-bar__pct">85%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="85" style="--w:85%"></div></div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="skills__group" data-reveal data-reveal-delay="100">
+            <h3 class="skills__group-title"><i class="fa-solid fa-star"></i> Creative &amp; Visual Skills</h3>
+            <div class="skill-bars">
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--edit"><i class="fa-solid fa-clapperboard"></i></span>
+                  <span class="skill-bar__name">Video Editing</span>
+                  <span class="skill-bar__pct">90%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="90" style="--w:90%"></div></div>
+                <span class="skill-bar__tools">Premiere Pro, After Effects, CapCut, DaVinci Resolve</span>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__head">
+                  <span class="skill-bar__icon skill-bar__icon--uiux"><i class="fa-solid fa-pen-ruler"></i></span>
+                  <span class="skill-bar__name">UI/UX Design</span>
+                  <span class="skill-bar__pct">88%</span>
+                </div>
+                <div class="skill-bar__track"><div class="skill-bar__fill" data-skill="88" style="--w:88%"></div></div>
+                <span class="skill-bar__tools">Figma, Adobe XD, Prototyping</span>
+              </div>
+
+            </div>
+
+            <h3 class="skills__group-title skills__group-title--tools"><i class="fa-solid fa-toolbox"></i> Tools &amp; Platforms</h3>
+            <div class="tool-grid">
+              <div class="glass-card tool-chip"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+              <div class="glass-card tool-chip"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+              <div class="glass-card tool-chip"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+              <div class="glass-card tool-chip"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="glass-card upload-banner" data-reveal>
+          <div class="upload-banner__info">
+            <span class="upload-banner__icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+            <div>
+              <h4>Model Portfolio</h4>
+              <p>Upload your best photos and build your modeling portfolio.</p>
+            </div>
+          </div>
+          <div class="upload-banner__action">
+            <label class="btn btn--gradient btn--sm" for="skillsUploadInput">
+              <span>Upload Photos</span>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </label>
+            <input type="file" id="skillsUploadInput" accept="image/png, image/jpeg" multiple hidden data-upload-input>
+            <span class="upload-banner__hint">JPG, PNG up to 10MB</span>
+          </div>
+        </div>
+
+      </div> 
+    </section>
+
+  
+    <!-- PROJECTS SECTION -->
+    
+    <section id="projects" class="section projects">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--pill">My Work</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-desc">A selection of my recent work across web development,application development, design, video and more.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Project filters" data-reveal>
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">Web Development</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="video">Video Editing</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="app">Applications</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <article class="glass-card project-card" data-category="web" data-reveal>
+            <div class="project-card__media">
+              <img src="https://placehold.co/640x480/141428/8b7bff?text=DevPortfolio" alt="DevPortfolio screenshot" loading="lazy">
+              <span class="project-card__tag project-card__tag--web">Web Development</span>
+              <a href="#" class="project-card__link" aria-label="View DevPortfolio project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="project-card__body">
+              <h3>DevPortfolio</h3>
+              <p>A personal portfolio website to showcase my work and skills.</p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="video" data-reveal data-reveal-delay="80">
+            <div class="project-card__media">
+              <img src="images/5990264705794116946_121.jpg" alt="Cinematic travel vlog thumbnail" loading="lazy">
+              <span class="project-card__tag project-card__tag--video">Video Editing</span>
+              <a href="#" class="project-card__link" aria-label="View Cinematic Travel Vlog project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="project-card__body">
+              <h3>Cinematic AI movie</h3>
+              <p>Created a cinematic AI movie</p>
+              <ul class="project-card__stack">
+                <li>CapCut</li><li>AI tools</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="app" data-reveal data-reveal-delay="240">
+            <div class="project-card__media">
+              <img src="images/LEH_WE_WOKE_logo_lockup.png" alt="leh we woke app screenshot" loading="lazy">
+              <span class="project-card__tag project-card__tag--app">App Development</span>
+              <a href="#" class="project-card__link" aria-label="leh we woke app screenshot"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="project-card__body">
+              <h3>Leh We Woke</h3>
+              <p>LEH WE WOKE is an application that is in progress where people can find simple task on a daly bases and also
+                post task  so that people can see and take it..
+              </p>
+              <ul class="project-card__stack">
+                <li>Business</li><li>Education</li><li>communication</li>
+              </ul>
+            </div>
+          </article> 
+
+          <article class="glass-card project-card" data-category="web" data-reveal>
+            <div class="project-card__media">
+              <img src="https://placehold.co/640x480/141428/8b7bff?text=TaskFlow" alt="TaskFlow app screenshot" loading="lazy">
+              <span class="project-card__tag project-card__tag--web">Web Development</span>
+              <a href="#" class="project-card__link" aria-label="View TaskFlow project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="project-card__body">
+              <h3>TaskFlow</h3>
+              <p>A productivity tool for managing tasks, teams and projects.</p>
+              <ul class="project-card__stack">
+                <li>React</li><li>Node.js</li><li>MongoDB</li>
+              </ul>
+            </div>
+          </article> 
+
+          <article class="glass-card project-card" data-category="web" data-reveal data-reveal-delay="80">
+            <div class="project-card__media">
+              <img src=" images/edos_clothing.jpg" alt="clothing store" loading="lazy">
+              <span class="project-card__tag project-card__tag--web">Web Development</span>
+              <a href="#" class="project-card__link" aria-label="View ShopEase project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="project-card__body">
+              <h3>Edo's clothing store</h3>
+              <p>An e-commerce platform with a modern UI and secure payments.</p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+        </div> 
+
+        <div class="projects__more" data-reveal>
+          <button class="btn btn--gradient" id="viewMoreProjectsBtn">
+            <span>View More Projects</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+
+      </div>
+    </section> 
+  
+    
+    <!-- CONTACT SECTION -->
+    
+    <section id="contact" class="section contact">
+      <div class="container contact__grid">
+
+        <div class="contact__info" data-reveal>
+          <span class="eyebrow eyebrow--pill">Get in Touch</span>
+          <h2 class="section-title">Let's Work <span class="text-gradient">Together.</span></h2>
+          <p class="section-desc">Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.</p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+              <div><strong>Email</strong><a href="mailto:aiahmoiwa22@gmail.com">aiahmoiwa22@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+              <div><strong>Phone</strong><a href="tel:+79337210103">+79337210103</a></div>
+            </li>
+            <li>
+              <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Location</strong><span>MOSCOW, RUSSIA</span></div>
+            </li>
+            <li>
+              <span class="contact__icon"><i class="fa-regular fa-clock"></i></span>
+              <div><strong>Availability</strong><span>Open to opportunities</span></div>
+            </li>
+          </ul>
+
+          <div class="contact__social">
+            <a href="https://www.instagram.com/moiwa22?igsh=MWMwOXM4Z3cza2tx&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.linkedin.com/in/aiah-moiwa-3b7937400" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com/@yannahtvofficial?si=EXZgHGr7IJjip5aK" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/aiah.moiwa?mibextid=LQQz5k" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/aiahmoiwa22-a11y" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/+79337210103" class="contact__whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i><span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card contact__form-card" data-reveal data-reveal-delay="150">
+          <h3>Send Me a Message</h3>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label for="cfName">Your Name</label>
+                <input type="text" id="cfName" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="contact-form__field">
+                <label for="cfEmail">Your Email</label>
+                <input type="email" id="cfEmail" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="contact-form__field">
+              <label for="cfSubject">Subject</label>
+              <input type="text" id="cfSubject" name="subject" placeholder="Project Inquiry" required>
+            </div>
+
+            <div class="contact-form__field">
+              <label for="cfMessage">Your Message</label>
+              <textarea id="cfMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--gradient btn--block">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="contact-form__status" id="contactFormStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="glass-card map-card" data-reveal>
+          <div class="map-card__placeholder">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Google Maps Placeholder — Moscow, Russia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a href="#home" class="brand brand--footer">
+        <span class="brand__mark">DT</span>
+        <span class="brand__text">DONALD <strong>TECH</strong></span>
+      </a>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="site-footer__social">
+        <a href=" https://www.instagram.com/moiwa22?igsh=MWMwOXM4Z3cza2tx&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://www.linkedin.com/in/aiah-moiwa-3b7937400" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=" https://youtube.com/@yannahtvofficial?si=EXZgHGr7IJjip5aK" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/aiah.moiwa?mibextid=LQQz5k" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="mailto:aiahmoiwa22@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear"></span> Donald Tech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
